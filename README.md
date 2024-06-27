@@ -1,7 +1,7 @@
 # Node-Process-Exporter
 
 ---
-这是一个监控主机进程的exporter，用于分析主机中所有进程资源使用情况，通过大盘可快速定位到哪个进程消耗的资源较多；
+这是一个监控主机进程的exporter，用于分析主机进行的资源使用情况；通常在节点资源突然暴增时能够通过大盘快速定位到相应的 process。
 
 ## 运行 exporter
 ``` 
@@ -95,4 +95,6 @@ describe_node_process_openfiles_info{cmd="/app/process",name="process",pid="1008
 ```
 
 ## 示图
+导入 ./dashboard.json
+
 ![img.png](img.png)
