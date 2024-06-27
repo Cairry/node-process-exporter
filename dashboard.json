@@ -325,7 +325,7 @@
       {
         "datasource": {
           "type": "prometheus",
-          "uid": "d2782e26-82b4-451e-9be4-d2c2a7a7bf09"
+          "uid": "${datasource}"
         },
         "definition": "label_values(describe_node_process_cpu_info,instance)",
         "hide": 0,
@@ -354,6 +354,6 @@
   "timezone": "",
   "title": "NodeProcess",
   "uid": "ad90a7eb-97a7-40fc-83e9-33d106c2468f",
-  "version": 10,
+  "version": 1,
   "weekStart": ""
 }
