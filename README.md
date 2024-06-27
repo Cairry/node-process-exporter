@@ -22,7 +22,7 @@ spec:
         app: node-process-exporter
     spec:
       containers:
-      - image: registry.js.design/prometheus/node_process_exporter:v21
+      - image: cairry/node-process-exporter:latest
         imagePullPolicy: IfNotPresent
         name: node-process-exporter
         ports:
