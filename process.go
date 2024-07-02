@@ -69,10 +69,6 @@ func registerMetric(proc *process.Process, pid int32, metric chan<- prometheus.M
 		return
 	}
 
-	if user != "root" {
-		return
-	}
-
 	name, err := proc.Name()
 	if err != nil {
 		return
