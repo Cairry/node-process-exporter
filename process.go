@@ -66,7 +66,7 @@ func (pgc ProcessGaugeCollect) Collect(metric chan<- prometheus.Metric) {
 func registerMetric(proc *process.Process, pid int32, metric chan<- prometheus.Metric, pgc ProcessGaugeCollect) {
 	user, err := proc.Username()
 	if err != nil {
-		return
+		user = "unknown"
 	}
 
 	name, err := proc.Name()
